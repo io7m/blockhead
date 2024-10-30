@@ -47,7 +47,10 @@ $ java -jar com.io7m.blockhead.jar run \
 
 By default, the service will download the blocklist from the given URL every
 24 hours, process and write the results to `list.txt.tmp`, and then
-atomically replace `list.txt` with `list.txt.tmp`.
+atomically replace `list.txt` with `list.txt.tmp`. The practice of atomically
+renaming ensures that, if `list.txt` exists, it can always be trusted to be
+the most recently downloaded blocklist - there is no risk of observing a
+half-written file.
 
 For service monitoring, [OpenTelemetry](https://opentelemetry.io/) can be
 enabled. The application produces traces, and will produce a `blockhead_up`
