@@ -29,8 +29,6 @@
 
     <!-- Third-party dependencies. -->
     <com.squareup.okio.version>3.9.1</com.squareup.okio.version>
-    <io.opentelemetry.api.logs.version>1.26.0-alpha</io.opentelemetry.api.logs.version>
-    <io.opentelemetry.sdk.logs.version>1.43.0</io.opentelemetry.sdk.logs.version>
     <io.opentelemetry.semconv.version>1.30.1-alpha</io.opentelemetry.semconv.version>
     <io.opentelemetry.version>1.43.0</io.opentelemetry.version>
     <org.jetbrains.version>1.9.25</org.jetbrains.version>
