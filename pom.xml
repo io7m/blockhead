@@ -13,7 +13,7 @@
 
   <groupId>com.io7m.blockhead</groupId>
   <artifactId>com.io7m.blockhead</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <name>com.io7m.blockhead</name>
   <description>Unbound blocklist maintenance</description>
