@@ -1,0 +1,17 @@
+FROM docker.io/library/alpine:${com.io7m.oci.versionAlpine}
+FROM docker.io/library/eclipse-temurin:${com.io7m.oci.versionTemurin}
+
+ENV PATH="/blockhead/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/java/openjdk/bin"
+
+COPY blockhead /blockhead
+
+LABEL "org.opencontainers.image.authors"="Mark Raynsford"
+LABEL "org.opencontainers.image.description"="Blockhead service"
+LABEL "org.opencontainers.image.licenses"="ISC"
+LABEL "org.opencontainers.image.source"="https://www.github.com/io7m-com/blockhead"
+LABEL "org.opencontainers.image.title"="blockhead"
+LABEL "org.opencontainers.image.url"="https://www.io7m.com/software/blockhead"
+LABEL "org.opencontainers.image.version"="${project.version}"
+LABEL "org.opencontainers.image.revision"="${buildNumber}"
+
+ENTRYPOINT ["/opt/java/openjdk/bin/java", "-jar", "/blockhead/blockhead.jar"]

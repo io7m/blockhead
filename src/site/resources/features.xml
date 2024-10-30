@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <ul>
+    <li>
+      Download blocklists on a regular schedule and export them to <tt>unbound</tt>.
+    </li>
+    <li>
+      Fully instrumented with <a href="https://opentelemetry.io/">OpenTelemetry</a>.
+    </li>
+    <li>
+      Platform independence. No platform-dependent code is included in any form, and installations can largely be
+      carried between platforms without changes.
+    </li>
+    <li>
+      <a href="https://opencontainers.org/">OCI</a>-ready: Ready to run as an immutable, stateless, read-only,
+      unprivileged container for maximum security and reliability.
+    </li>
+    <li>ISC license.</li>
+  </ul>
+</div>
